@@ -9,6 +9,8 @@
 	<link rel="stylesheet" type="text/css" href="styles/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script type="text/javascript" src="styles/js/bootstrap.min.js"></script>
@@ -46,7 +48,7 @@
 			
 			<form class="form-inline my-2 my-lg-0">
 				<input class="form-control mr-sm-2" type="text" placeholder="Search">
-				<button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+				<a href="index.html" style="color: black;"><i class="fa fa-search" aria-hidden="true"></i></a>
 			</form>
 		</div>
 </nav><!-- end of nav one-->
@@ -58,19 +60,8 @@
 	<div class="collapse navbar-collapse" id="collapsibleNavId">
 		<marquee behavior="alternate" direction="" onmouseover="stop()" onmouseout="start()" >3,  Ave Maria Close, Off Saudi Street, Igando Lagos, Nigeria.</marquee>
 	</div>
-	<a href="#">listen to our live broadcast</a><br>
-	<button id="special" class="btn btn-danger btn-sm" data-loading-text="loading..." type="button">listen
-	</button>
-	<script type="text/javascript">
-	$('#fat-btn')
-		.click(function () {
-			var btn = $(this)
-			btn.button('loading')
-			setTimeout(function () {
-				btn.button('reset')
-			}, 3000)
-		});
-	</script>
+	<a href="#" class="nav-link">listen to our live broadcast</a><br>
+	<a href="#" style="color: red;" id="mic"><i class="fa fa-microphone" aria-hidden="true"></i></a>
 </nav>
 <!--end of nav two-->
 
@@ -130,7 +121,19 @@
 						animation: pro3 5s;
 						animation-iteration-count: infinite;
 						text-shadow: 0px 1px 3px black;
-					} 
+					} #mic{
+						animation: rec 5s;
+						animation-iteration-count: infinite;
+					}@keyframes rec{
+					0%, 50%{
+						color: red;
+
+					}100%{
+						color:green;
+					}
+				
+						
+					}
 					@keyframes pro{
 					30%{
 						opacity: 0;
