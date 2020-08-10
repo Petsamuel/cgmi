@@ -59,13 +59,16 @@
         <div class="row">
             
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
-                <h2 style="margin: 25px 0px; text-shadow: 1px 0px 6px white; font-family: franklin; font-size: 50px; "> Faith center <br><span>Welcome Home</span> </h2>
+                <h2 style="margin: 25px 0px; text-shadow: 1px 0px 6px white; font-family: franklin; font-size: 50px; "><span>Welcome Home</span></h2>
+                <span style="text-shadow: 1px 0px 4px black;">
+                <span style="font-family: cursive; color: yellowgreen;">Nothing Missing </span><span style="font-family: cursive; color: white;"> Nothing Broken...</span>
+                </span>
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <h5 class="text-center text-light" style=" margin: 8px 0px; text-shadow: 0px 1px 3px black; font-family: Arial, Helvetica, sans-serif; font-size: 30px;">Worship with us<span> Sundays at 9:00 </span></h5><br>
-                <input type="button" value="What to Expect" class="btn btn-warning" style="margin-bottom: 85px;">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding: 30px;">
+                <h5 class="text-center text-light" style=" margin: 8px 0px; text-shadow: 0px 3px 3px black; font-family: Arial, Helvetica, sans-serif; font-size: 30px;">Worship with us<span> Sundays at 9:00 </span></h5><br>
+                <input type="button" value="What to Expect" class="btn btn-warning" style="margin-bottom: 30px;">
             </div>
         </div>
     </div>    
@@ -84,7 +87,7 @@
             <div class="row bg-info">
                 <div class="media">
                     <img class="align-self-start" src="sm.png" alt="" style="width: 15%; border-radius: 10rem; box-shadow: 1px 1px 5px ;">
-                    <div class="media-body" style="margin-left: 8px; font-size: 14px;">
+                    <div class="media-body" style="margin-left: 8px; font-size: 14px;" id="above">
                         <h5 class="mb-3" style="font-family: cursive;">Above Only Daily Devotional</h5>
                         <strong> By: Archbishop M E Benson Idahosa <br>
 <p> TUESDAY AUGUST 11 <br>
@@ -123,7 +126,7 @@ I thank you  Dear Father , for the great love you have for me and for the access
         </div>
         
                 <div class="row">
-                <div class="col-xs-6 col-sm-12 col-md-12 col-lg-7" style="margin:50px 0px;" >
+                <div class="col-xs-6 col-sm-12 col-md-12 col-lg-7" style="margin:50px 0px;" id="sunday" >
                    <h5>SUNDAY SCHOOL LESSON</h5>
                   <strong>DATE: SUNDAY  AUGUST 09, 2020 
                         TOPIC: THE BELIVERS' CONDUCT 
@@ -153,15 +156,31 @@ explain the nature and purpose of God's grace, and how it should motivate in us 
 service and obedience to God. </p>
  <input type="button" value="read More" class="btn btn-primary">
  </div>
- <div class="col-xs-12 col-sm-6 col-md-3 col-lg-4" style="margin:50px 0px;" >
+ <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5" style="margin:50px 0px;" >
     <div class="media" style="box-shadow: 1px 1px 5px; margin-bottom: 40px;">
-        <img class="align-self-top" src="church.png" alt="" style="width: 30%; border-radius: 3rem; padding: 6px 9px;"><br>
-        <div class="media-body">
-            <h5 class="mb-0" style="font-family: cursive;">Message <br>DATE: SUNDAY  AUGUST 09, 2020</h5>
-            <p><audio src="" controls></audio></p>
-            <p><audio src="" controls></audio></p>
+        <img class="align-self-center" src="chruch.png" alt="" style="width:20%; border-radius: 3rem;"><br>
+        <div class="media-body" style="width: 35px;" id="msg">
+            <h5 class="mb-1" style="font-family: cursive;">Message <br>DATE: SUNDAY  AUGUST 09, 2020</h5>
+            <p><audio src="m1.mp3" controls  style="width: 100%;"></audio></p>
+            <p><audio src="m2.mp3" controls  style="width: 100%;"></audio></p> <br>
+            <div class="well well-lg text-center bg-light" style="box-shadow: 0px 0px 1px; margin-bottom: 40px; border-radius: 1rem;">
+                <span style="margin: 20px; margin-bottom: 4px;">
+                "Congratulations to everyone for a great service!
+                Happy Lord's Day once again."</span> <br>
+                <button type="button" class="btn btn-primary btn-sm " id="clicks" style="margin-bottom: 15px;">likes <i class="fa fa-thumbs-up" aria-hidden="true"></i> </button>
+                <script>
+                    var button = document.getElementById("clicks"),
+                    count=6;
+                    button.onclick=function(){
+                        count+=1;
+                        button.innerHTML="likes " + count
+                    }
+                </script>
+                </div>
         </div>
-    </div></div>
+    </div>
+</div>
+    
            </div>
             
         </div>
@@ -205,8 +224,8 @@ service and obedience to God. </p>
                         <div class="col-md-3">
                             <div class="headline text-light"><p>HomePage</p></div>
                             <ul class="list-unstyled link-list">
-                                <li><a href="#">AboveOnly</a></li>
-                                <li><a href="#">SundaySchool</a></li>
+                                <li><a href="#above">AboveOnly</a></li>
+                                <li><a href="#sunday">SundaySchool</a></li>
                             </ul>
                         </div>
                         <div class="col-md-3">
@@ -219,7 +238,7 @@ service and obedience to God. </p>
                   <div class="headline text-light"><p>Support</p></div>
                   <address>
                     <ul class="list-unstyled link-list text-light">
-                      <li><a href="#">Contact Us</a></li>
+                      <li><a href="index.html">Contact Us</a></li>
                       <li>
                         <a href="#"><i class="fa fa-envelope"></i>support@CGMIfaithcenter.com</a>
                       </li>
@@ -229,11 +248,11 @@ service and obedience to God. </p>
                         <div class="col-md-3">
                             <div class="headline text-light"><p>Faithcenter</p></div>
                             <ul class="list-unstyled link-list">
-                    <li><a href="#">About Us</a></li>
-                    <li> <a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Use</a></li>
-                    <li><a href="#">FAQs</a></li>
-                    <li><a href="#">Cancellation/Rescheduling policy</a></li>
+                    <li><a href="index.html">About Us</a></li>
+                    <li> <a href="error404.html">Privacy Policy</a></li>
+                    <li><a href="error404.html">Terms of Use</a></li>
+                    <li><a href="error404.html">FAQs</a></li>
+                    <li><a href="error404.html">Cancellation/Rescheduling policy</a></li>
                   </ul>
                         </div>
                     </div>
