@@ -2,247 +2,355 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="styles/css/bootstrap-grid.css">
-	<link rel="stylesheet" type="text/css" href="styles/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
-    <script type="text/javascript" src="styles/js/bootstrap.min.js"></script>
-<title>Home</title>
-</head>
-<body style=" color: white;"> 
-    <nav class="navbar navbar-expand-lg navbar-light static-top bg-light" >
-		<a class="navbar-brand" href="#" style="font-size: 25px; text-shadow: 0px 1px 1px;"><img src="lo.jpeg" class="d-inline-block align-top" width="40" height="40" alt="..." style="border-radius: 3rem; margin: 3px;"> Faith<span style="color:red">Center</span></a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse " id="navbarContent">
-			<ul class="navbar-nav " >
-				<li class="nav-item active ">
-					<a class="nav-link " href="index.html">Home <span class="sr-only">(current)</span></a>
-				</li>
-	
-				<li class="nav-item">
-					<a class="nav-link" href="About.html">About</a>
-				</li>
-	
-				<li class="nav-item">
-					<a class="nav-link " href="error404.html">Event</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link " href="error404.html">Store</a>
-                </li>
-                <li class="nav-item">
-					<a class="nav-link " href="index.html">Last Message</a>
-                </li>
-                <li class="nav-item">
-                    <input type="button" class="nav-link  btn btn-danger"   style="color:white; "onclick="msg()" value="Give ">
-                    <script>
-                        function msg(){
-                            alert("this feature not Available");
-                        }
-                    </script>
-                    
-                </li>
-            </ul>
-        </div> 
-          
-    </nav>
-<!-- end nav -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 
-<div class="container-fluid" style="line-height: 5px; " id="bgmove">
-<div style="background-color: rgba(58, 55, 55, 0.226); text-shadow: 1px 4px 6px black;">
-<div class="d-flex flex-row">
-    <div class="media col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<link rel="stylesheet" href="styles/css/bootstrap.min.css">
+<link rel="stylesheet" href="css.css">
+<title>Home Page</title>
+</head>
+<body>
+<!-- nav control -->
+<nav class="navbar navbar-expand-lg navbar-light static-top bg-light" >
+    <a class="navbar-brand" href="#" style="font-size: 25px; text-shadow: 0px 1px 1px;"><img src="lo.jpeg" class="d-inline-block align-top" width="40" height="40" alt="..." style="border-radius: 5rem; margin: 3px;"> Faith<span style="color:red">Center</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarContent">
+        <ul class="navbar-nav ml-auto" >
+            <li class="nav-item active ">
+                <a class="nav-link " href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="About.html">About us</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link " href="error404.html">Ministries</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="error404.html">Events</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="index.html">Messages</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="index.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="index.html">Contact us</a>
+            </li>
+            <li class="nav-item">
+                <input type="button" class="nav-link  btn btn-danger"   style="color:white; "onclick="msg()" value="Give ">
+                <script>
+                    function msg(){
+                        alert("this feature not Available");
+                    }
+                </script>
+                
+            </li>
+        </ul>
+    </div> 
+      
+</nav>
+<!-- end nav  -->
+<div id="bgmove">
+     <div class="container-fluid">
+         <div class="row"> 
+             <div class="col-xs-3 col-sm-6 col-md-4 col-lg-4">
+                    <div class="media-body" style="margin: 50px;">
+                        <h1 class="bghead text-light" style="text-shadow: 1px 1px 3px black; margin-top: 15%;">Welcome Home </h1>
+                        <p class="text-light" style="margin-top: 15%; text-shadow: 1px 1px 9px black; ">Worship with us Every Sunday @8:30 am </p>
+                        <p> <input type="button" value="What to Expect" class="btn btn-warning btn-md"></p>
+                    </div>
+               </div> 
+               <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <a class="d-flex align-self-bottom" href="#" style="width: 100%;"> 
+                    <img src="4.png" alt="" style="width: 35%;">
+              </a>
+               </div>
+         </div>
+     </div>
+</div>
+
+<!-- jumbotron -->
+<div class="container-fluid padding text-center">
+    <div class="row jumbotron padding">
+
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <i class="fa fa-microphone "></i>
+                        <h5 class="mb-0 ">Weekly Messages</h5>
+                        <p class="mb-4 ">Get all the Messages Online and Offline, <br>
+                            <a href="#" class="nav-link"> Read more</a></p>
+                        
+                    </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 ">
+                    <i class="fa fa-coffee"></i>
+                        <h5 class="mb-0">About us</h5>
+                        <p class="mb-4"><br><a href="#about" class="nav-link"> Read more</a></p>
+                        
+                    </div>
+
+
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                   <i class="fa fa-home"></i>
+                        <h5 class="mb-0">Locate us</h5>
+                        <p> 3,  Ave Maria Close, Off Saudi Street, Igando Lagos, Nigeria. <br> <a href="#" class="nav-link"> Read more</a></p>
+                        
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+</div>
+
+<!--welcome spot  -->
+<div class="container-fluid padding">
+    <div class="row text-center welcome">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="thumbnail d-flex align-self-bottom">
-                <img src="4.png" class="d-flex align-self-bottom" width="30%">                    
-                        <div class="media-body text-center">
-                            <p>   
-                                <h1 class="mb-5 mt-3 " style="color:goldenrod; text-shadow: 3px 1px 4px rgb(0, 0, 0); font-family: 'Times New Roman', Times, serif; font-size: 320%;">Welcome<span> Home</span></h1> <br>
-                                <h5 class="mb-5 " style="margin-top: 5%; text-shadow: 1px 4px 6px black; ">Worship with us Sundays at <br> 9:00am prompt</h5>
-                                <input type="button" value="What to Expect" class="btn btn-danger" href="#p1">
-                            </p>  
-                        </div>
+            <h1 class="display-4">Welcome</h1>
+        </div>
+        <hr>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+           <div class="media">
+               <img class="align-self-start" src="sm.png" alt="" width="10%" style="border-radius: 4rem;">
+               <div class="media-body">
+                   <p class="lead">
+                    We have been waiting for you!, we're glad you could reach us via this platform, Above all , we want to express Christ's love with Genuine, heartfelt Warmth <br>
+                        we're eager to know you and are excited to share with you the mervelouse ways God is working. Our door are Open, our Hearts are Open to you, no matter who you are <br>
+                        if you have been thinking, praying or searching and hoping for a place to worship then look no further CGMI (faith center) is the place for you, we are encourging you to join us in services.
+                </p>
+               </div>
+           </div>
+        </div> 
+    </div>
+</div>
+
+<!-- about spot -->
+<div class="container-fluid padding">
+    <h5 id="about">― About us</h5>
+   <div class="row bg-light"> 
+      
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+        
+        <p class="lead text-center">Mission <br> Church of God MIssion International <br>
+               Evangelising the lost ,for their transformation <br> 
+               <span>(Spirit, Soul and Body)</span>
+               and developing them into leadership through<br> church planting, School, Hospitals, and other Services.</p>
+               <p class="lead text-center"> Our Credo</p>
+               <p>
+                We Subscribe Fully to the Doctrines and Teachings of
+                CHURCH OF GOD MISSION INTERNATIONAL</p>
+        </p>
+       </div>
+       
+       <div class="col-xs-12 col-sm-6 col-md-6  col-lg-6 mt-1">
+           <img src="lo.jpeg" alt="" width="30%" style="border-radius: 9rem;" class="img-fluid">
+       </div>
+       
+       
+   </div>
+</div>
+<!-- pastors container -->
+<div class="container-fluid padding">
+  <div class="row">
+      <h5>― Our Pastors</h5>
+  </div>
+</div>
+<div class="container-fluid ">
+    <div class="row padding">
+        <div class="col-md-4">
+            <div class="card mb-4" style="box-shadow: 1px 1px 1px black;">
+                <img class="card-img-top" src="woman.png" alt=""style="width: 30vh;">
+                <div class="card-body">
+                    <h5 class="card-title">Pastor in charge</h5>
+                    <p class="card-text">Rev. P.N Ebenuwa <br> 
+                        Minus similique magnam delectus autem inventore.
+                         Unde nostrum dolorum architecto maxime voluptatum commodi minima asperiores ex ipsam incidunt,
+                          quasi, eum labore aut.</p>
+                          <a href="#" class="btn btn-primary">Connect</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4"  style="box-shadow: 1px 1px 1px black;">
+                <img class="card-img-top" src="woman.png" alt=""style="width: 30vh;"> 
+                <div class="card-body">
+                    <h5 class="card-title">Asst.Pastor</h5>
+                    <p class="card-text">Pst. Mrs Patricia Umoren <br> 
+                        Minus similique magnam delectus autem inventore.
+                         Unde nostrum dolorum architecto maxime voluptatum commodi minima asperiores ex ipsam incidunt,
+                          quasi, eum labore aut.</p>
+                          <a href="#" class="btn btn-primary">Connect</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4"  style="box-shadow: 1px 1px 1px black;">
+                <img class="card-img-top" src="man.png" alt="" style="width: 30vh;">
+                <div class="card-body">
+                    <h5 class="card-title">Title</h5>
+                    <p class="card-text">Pst Umoren. <br> 
+                        Minus similique magnam delectus autem inventore.
+                         Unde nostrum dolorum architecto maxime voluptatum commodi minima asperiores ex ipsam incidunt,
+                          quasi, eum labore aut.</p>
+                          <a href="#" class="btn btn-primary">Connect</a>
                 </div>
             </div>
         </div>
         
-    </div> 
-</div>
-</div>
-<!--  -->
-
-<div class="container-fluid "> 
-<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bg-light" style="border-radius: 5px 5px 0px 0px; text-justify: auto; margin:5px" >    
-    <div class="row text-dark " >
-        <h2 style="margin:5px;">Welcome! <div id="timee()"></div></h2>
-            <p style="margin: 3%; text-justify: auto;">We have been waiting for you!, we're glad you could reach us via this platform, Above all , we want to express Christ's love with Genuine, heartfelt Warmth <br>
-                we're eager to know you and are excited to share with you the mervelouse ways God is working. Our door are Open, our Hearts are Open to you, no matter who you are <br>
-                if you have been thinking, praying or searching and hoping for a place to worship then look no further CGMI (faith center) is the place for you, we are encourging you to join us in services.           
-            </p>
     </div>
 </div>
+<div class="container-fluid padding">
+    <div class="row">     
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bg-light">
+        <h5 class="mt-4">― Other Ministries</h5> <br>
+        <div class="col-12">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="team.png" alt="" style="width: 43vh;">
+                  <div class="carousel-caption mb-0 text-dark">
+                    <h3>Youth & Agape</h3>
+                    <p></p>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <img src="man.png" alt="" style="width: 28vh;">
+                  <div class="carousel-caption mb-0 text-dark">
+                    <h3>Mens Fellowship</h3>
+                    <p>Excellent men</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="woman.png" alt="" style="width: 28vh;">
+                  <div class="carousel-caption mb-1 text-dark">
+                    <h3>Woman Fellowship</h3>
+                    <p> </p>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </a>
+            </div>
+            
+        </div>
+        
+    </div>
 </div></div>
-<div class="container-fluid bg-white text-dark" style="margin-top:1.5%;">
+<!-- message -->
+<div class="container-fluid mb-4" >
+<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 mt-4" style="box-shadow: 1px 1px 3px black;">
+    <h5>― Message Us</h5> Lets Pray Along with you, drop your prayer request <br> Write to us today. <br>
+    <!-- required bootstrap js -->
+    <button type="submit" name="commit" class="btn btn-outline-primary btn-sm mb-4 "data-toggle="modal" data-target="#Message">
+      Send a message 
+    </button>
+    <div class="modal fade" id="Message" role="dialog">
+      <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Enter Details</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-sm">
+                  <i class="fa fa-envelope"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-sm">
+                  <i class="fa fa-lock"></i>
+                </span>
+              </div>
+              <textarea name="text" id="info" cols="30" rows="10"></textarea>
+            </div>
+            <button type="submit" name="commit" class="btn btn-primary btn-lg btn-block">
+              <span>Send <i class="fa fa-sign-in"></i></span>
+            </button>
+            <div class="text-center">
+              <a class="" href="" data-dismiss="modal" data-toggle="modal" data-target="#signup">Back</a>
+            </div>
+          </div>
+        </div>
+      </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="navbar">
+          <a class="navbar-brand" href="#">Ads Placement</a>
+          <ul class="nav navbar-nav">
+              <li class="active">
+                  <a href="#"> <i class="fas fa-arrow-circle-up" class="text-dark"></i>top </a>
+              </li>
+          </ul>
+      </div>
+      
+    <!-- footer -->
     
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-   <div class="row">
-       <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6" style="margin-top: 20px;">
-           <div class="row bg-light" style="box-shadow: 1px 0px 1px black;">
-               
-               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-top: 35px;">
-               
-                   <div data-spy="scroll" data-target="#myListgroup" data-offset="0" >
-                       <h3 class="mb-3 text-center text-danger" style="font-family: cursive;">Above Only Daily Devotional<br></h3>
-                     <strong class="text-default">By: Archbishop M E Benson Idahosa<br>
-                        Thursday, August 15.<br>
-                        Grow in Your Sonship Consciousness<br>
-                        Galatians 4:6-7 (LB), Romans 8:16 (LB & AMP), Psalms 82:6 (NIV).</strong>
-
-                       <p id="p1"><em class="text-info">And because we are his sons, God has sent the Spirit of his Son into our hearts, so now we can rightly speak of God as our dear Father</em>. 
-                           Now we are no longer slaves but God’s own sons. And since we are his sons, everything he has belongs to us, for that is the way God planned. <em class="text-info"> For his Holy Spirit speaks to us deep in our hearts and tells us that we really are God's children.</em> The Spirit Himself [thus] testifies together with our own spirit, [assuring us] that we are children of God.
-                            <em class="text-info">“I said, ‘You are “gods”; you are all sons of the Most High</em>.
-                        </p>
-                        <p id="p2">
-                            The Jews had a deep understanding of what it means to be called a son of God. That is why when Jesus called God His Father, the Bible says the Jews become more determined to kill Jesus because by calling God His Father, He was making Himself equal with God, John 5:17-18. 
-                            By our faith in Jesus, we have become sons of God like Jesus, John 1:12. Jesus is no more the only begotten son of God. He is now the first born among many brethren, Rom. 8:29. 
-                            The Bible describes us as the church of the first born, Heb. 12:23. Our first text above says we are no longer slaves of God. We are sons of God and God has put the Spirit of His Son Jesus into our hearts. Now, God wants us to relate with Him just as Jesus His Son relates with Him.
-                             The Bible says <em class="text-info"> we have been accepted in the beloved, Eph. 1:6</em>. This means that we are God’s beloved sons and daughters just like Jesus is. When we are conscious that God is our loving Heavenly Father, there is an activation of both His life, love and abundance in our lives. We are members of God’s household and as God expects a man to take care of His household, God will also take good care of us. 
-                        </p>
-                       <p id="p3">
-                        Trying to relate with God and earn His favour by keeping the law is what makes us slaves or servants. 
-                        But putting our faith in Jesus and receiving God’s abundant love and grace is what makes us God's sons. 
-                        Slaves do not have rights and privileges. Slaves do not enjoy any inheritance. 
-                        Slaves do not enjoy a loving relationship with their masters. In John 8:35 (GNB), Jesus said, <em class="text-info">“A slave does not belong to a family permanently, but a son belongs there forever.
-                        "</em> One of the assignments of the Holy Spirit in our lives is to strengthen our conviction that we are sons of God. 
-                        He spreads God’s love in our hearts, Rom. 5:5.  
-                       </p>
-                       <p> <strong>Prayer Focus:</strong>
-                        Rejoice and thank God for making you His son or daughter. Ask Him to help you grow in your consciousness that He is your Father.
-                           <a href="cgmi.doc" Download>Download <i class="fa fa-download" aria-hidden="true"></i></a></p>
-                   </div>
-
-               </div>
-               
-           </div>        
-              
-       </div>
-       
-       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="margin-top: 35px;">
-        <h5>SUNDAY SCHOOL LESSON</h5>
-        <strong>DATE: SUNDAY  AUGUST 09, 2020 (Last Week)<br>
-              TOPIC: THE BELIVERS' CONDUCT 
-TEXT: TITUS 2:1-15 <br>
-CENTRAL THOUGHT :Grace projects and promotes Godliness, right living and Good work.</strong><br><p>
-INTRODUCTION:In today's world, there seems to be a silent resentment between the aged and the young ones of the society as aresult of conflict of ideas. The church has not been immune to this because there are
-tendencies that portray the young as being in hurry to do away with the old school and to carve a niche for themselves.
-Having people ofdifferent ages and means in church is supposed to makethe church strong, balanced and complete. However, thereare imminent challenges here and there. The role of an efficient leadership is to harness Such diversities to the
-advantage of the church.</p><p>Grace is the commondenominator for salvation among all believers. It is opento all, and all are invited to partake of her benefits. To
-love and live in sin is totrample under foot the worksof grace perfected by theblood of Jesus Christ.
-Salvation through graceshould be the beginning of practical demonstration of God's nature by any believer.In this study, we shall
-explain the nature and purpose of God's grace, and how it should motivate in us a life ofservice and obedience to God. </p>
-<input type="button" value="read More" class="btn btn-primary"><br>
-
-                <div class="  text-center bg-light" style="margin-top: 5%; border-radius: 3px 3px 0px 0px;">
-            <h5 style="font-family: cursive;" class=" text-center">Message</h5><br>Minister: REV. P.N Ebenuwa <br>
-             <span class="mb-1" >DATE: SUNDAY  AUGUST 09, 2020</span>
-            <p><audio src="m1.mp3" controls  style="width: 100%;"></audio></p>
-            <p><audio src="m2.mp3" controls  style="width: 100%;"></audio></p> <br>
-            <div class="well well-lg text-center bg-light" style="box-shadow: 0px 0px 1px; margin-bottom: 40px; border-radius: 1rem;">
-            <span style="margin: 20px; margin-bottom: 4px;"></span>
-            "Congratulations to everyone for a great service!
-            Happy Lord's Day once again."</span> <br>
-            <button type="button" class="btn btn-primary btn-sm " id="clicks" style="margin-bottom: 15px;">likes <i class="fa fa-thumbs-up" aria-hidden="true"></i> </button>
-            <script>
-            var button = document.getElementById("clicks"),
-            count=6;
-            button.onclick=function(){
-            button.innerHTML="Liked <i class=\"fa fa-thumbs-up\" aria-hidden=\"true\"></i>"
-                    }
-            </script>
-                    </div>
-            </div>
+<footer class="mt-4" >  
+<div class="container-fluid bg-dark mt-4 ">
+    <div class="row text-center text-light">
+        <div class="col-md-4">
+            
+         <a class="navbar-brand" href="#" style="font-size: 25px; text-shadow: 0px 1px 1px;"><img src="lo.jpeg" class="d-inline-block align-top" width="40" height="40" alt="..." style="border-radius: 9rem; margin: 3px;"> Faith<span style="color:red">Center</span></a>
+            <hr class="light">
+            <h5 class="text-light">Meetings</h5>
+            <p> Sundays: 9am-11am</p>
+            <p>Tuesday: Bible Study― 6pm</p>
+            <p>Thursday: Rivival Prayer―6pm</p>
+            <p>Saturday: Evengelism― 4pm</p>
+        
         </div>
+        <div class="col-md-4">
+            <hr class="light">
+            <h5 class="">Locate us</h5>
+            <hr class="light">
+            <p>District HeadQuarters</p>
+            <p>3,  Ave Maria Close, Off Saudi Street, Igando Lagos, Nigeria.</p>
+
         </div>
-   </div>
-        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-12 bg-white" style="padding-top: 5%; margin-bottom:9px;">
-            <div class="row">
-            <div class="panel panel-light">
-                <!-- Default panel contents -->
-                <div class="panel-heading text-center">District HeadQuarters</div>
-                    <div class="panel-body text-center">
-                        <p>3,  Ave Maria Close, Off Saudi Street, Igando Lagos, Nigeria.</p>
-                    </div>
-                    <table class="table">
-                        <thead>
-                            <tr class="bg-info">
-                                <th><h6>Sunday school Class―<span class="text-danger"> 8:00am</span></h6></th>
-                            </tr>
-                            <tr>
-                                <th><h6>Sunday services ―<span class="text-danger"> 9:00am</span></h6></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="bg-info"><h6>Bible Study―<span class="text-danger"> 6:00pm</span></h6></td>
-                            </tr>
-                            <tr>
-                                <td ><h6>Rivival Prayer―<span class="text-danger"> 6:00pm</span></h6></td>
-                            </tr>
-                            <tr>
-                                <td class="bg-info"><h6>Saturday: Evengelism―<span class="text-danger"> 4:00pm</span></h6></td>
-                            </tr>
-                        </tbody>
-                    </table>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-12 bg-white" style="padding-top: 5%; margin-bottom:9px;"></div>
-  </div>
-</div></div>
-</div> <!-- footer -->
-<div class="footer-v1 bg-img bg-dark">
-<div class="footer no-margin nav sticky-bottom bg-dark">
- <div class="container">
-<div class="row">
-<div class="col-md-3">
-<div class="headline text-light"><p>HomePage</p></div>
-<ul class="list-unstyled link-list">
- <li><a href="#above">AboveOnly</a></li>
-<li><a href="#sunday">SundaySchool</a></li>
-</ul></div>
-<div class="col-md-3">
- <div class="headline text-light"><p>Developer spot</p></div>
-<ul class="list-unstyled link-list">
-<li><a href="https://bieeportfolio.netlify.app">Cantact</a></li>
-</ul></div>
-<div class="col-md-3">
-<div class="headline text-light"><p>Support</p></div>
-<address>
-<ul class="list-unstyled link-list text-light">
-<li><a href="About.html">Contact Us</a></li>
-<li>
-<a href="#"><i class="fa fa-envelope"></i>support@CGMIfaithcenter.com</a>
-</li>
- </ul>
-</address>
+        <div class="col-md-4 social">
+            <hr class="light ">
+            <h5 class="">Connect with Us </h5>
+            <hr class="light">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#"> <i class="fab fa-youtube"></i></a>
+            
+            <p><a href="#"><i class="fa fa-envelope"></i>support@CGMIfaithcenter.com</a></p>
+            <p><a href="error404.html">Privacy Policy</a></p>
+        </div>
+    </div>
 </div>
-<div class="col-md-3">
-<div class="headline text-light"><p>Faithcenter</p></div>
-<ul class="list-unstyled link-list">
-<li><a href="index.html">About Us</a></li>
-<li> <a href="error404.html">Privacy Policy</a></li>
-<li><a href="error404.html">Terms of Use</a></li>
-<li><a href="error404.html">FAQs</a></li>
-<li><a href="error404.html">Cancellation/Rescheduling policy</a></li>
-</ul>
-</div></div></div></div></div>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script type="text/javascript" src="styles/js/bootstrap.min.js"></script>
+<div class="col-12 text-center">
+    <hr class="light">
+    <h6>&copy; 2020 CGMI Faith Center</h6> <br>
+    Website by<a href="https://bieeportfolio.netlify.app" style="color: black;"> Bieefilled</a>
+</div>
+
+</div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="styles/js/bootstrap.min.js"></script>
+<script src="styles/js/bootstrap.js"></script>
 </body>
 </html>
