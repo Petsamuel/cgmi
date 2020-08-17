@@ -10,7 +10,7 @@ body{
 }.nav-link {
     text-shadow: 1px 0px 0px;}
 #bgmove {
-background-image: url('1.jpg'), url('logo.jpeg'), url('3.jpg');
+background-image: url('1.jpg'), url('logo.jpeg'), url('3.jpg') url('2.jpg');
 background-size:cover;
 background-attachment:fixed;
 background-repeat: repeat-x;
