@@ -8,20 +8,14 @@ body{
     color: black;
     font-family: Arial, Helvetica, sans-serif;
 }.nav-link {
-    text-shadow: 1px 0px 0px;
-}
-.socials{
-    padding: 4px 9px;
-    margin: 0px 7px;
-}
+    text-shadow: 1px 0px 0px;}
 #bgmove {
-height:50vh;
 background-image: url('1.jpg'), url('logo.jpeg'), url('3.jpg');
 background-size:cover;
 background-attachment:fixed;
-background-position: 15%;
 background-repeat: repeat-x;
 animation: animatedBackground 15s linear infinite alternate;
+
 
 }#imgeff{
 width:30% ;
@@ -38,9 +32,9 @@ animation: fades 1s ease-in-out 15s linear infinity alternate;
   }
 
 @keyframes animatedBackground {
-    10%{
+    10% , 30%{
     background-image: url('1.jpg');
-    background-position: 0% 0%;
+    background-position: 1% 40%;
     opacity:1;
     }
     50%{
@@ -50,7 +44,7 @@ animation: fades 1s ease-in-out 15s linear infinity alternate;
     }
     100%{
     background-image: url('3.jpg');
-    background-position:100% 0;
+    background-position:100% 40%;
     opacity:1;
     }}
 
