@@ -8,7 +8,7 @@
 
 <link rel="stylesheet" href="styles/css/bootstrap.min.css">
 <link rel="stylesheet" href="css.css">
-<title>Home Page</title>
+<title>Message</title>
 </head>
 <body>
 <!-- nav control -->
@@ -56,30 +56,132 @@
       
 </nav>
 <!-- end nav  -->
-<div class="container-fluid padding">
-    <ul class="list-unstyled">
-        <li class="media">
-            <img src="sm.png" class="mr-3" alt="..." width="15%">
-            <div class="media-body">
-                <h5 class="mt-0 mb-1">Above Only Devotional</h5>
-                Download the the Above Only Devotional on your mobilephone
+<div class="container-fluid">
+    <div class="row">
+ <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+     
+    <div class="  text-center bg-light" style="margin-top: 5%; border-radius: 3px 3px 0px 0px;">
+        <h5 style="font-family: cursive;" class=" text-center">Recent Message</h5><br>Minister: REV. P.N Ebenuwa <br>
+         <span class="mb-1" >DATE: SUNDAY  AUGUST 16, 2020</span>
+        <p><audio src="msg1.mp3" controls  style="width: 100%;"></audio></p>
+        <p><audio src="msg2.mp3" controls  style="width: 100%;"></audio></p> <br>
+        <div class="well well-lg text-center bg-light" style="box-shadow: 0px 0px 1px; margin-bottom: 40px; border-radius: 1rem;">
+        <span style="margin: 20px; margin-bottom: 4px;"></span>
+        "Congratulations to everyone for a great service!
+        Happy Lord's Day once again."</span> <br>
+        <button type="button" class="btn btn-primary btn-sm " id="clicks" style="margin-bottom: 15px;">likes <i class="fa fa-thumbs-up" aria-hidden="true"></i> </button>
+        <script>
+        var button = document.getElementById("clicks"),
+        count=6;
+        button.onclick=function(){
+        button.innerHTML="Liked <i class=\"fa fa-thumbs-up\" aria-hidden=\"true\"></i>"
+                }
+        </script>
+                </div>
+        </div>
+ </div>
+    
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4 padding">
+        <h5 style="font-family: cursive;" class=" text-center">Old Message</h5><br>Minister: REV. P.N Ebenuwa <br>
+        <span class="mb-1" >DATE: SUNDAY  AUGUST 9, 2020</span><p>
+           <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#listen">Listen</button>
+          <div id="listen" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                      <div class="modal-body">
+                          <p><div class="  text-center bg-light" style="margin-top: 5%; border-radius: 3px 3px 0px 0px;">
+                            <h5 style="font-family: cursive;" class=" text-center">Message</h5><br>Minister: REV. P.N Ebenuwa <br>
+                             <span class="mb-1" >DATE: SUNDAY  AUGUST 09, 2020</span>
+                            <p><audio src="m1.mp3" controls  style="width: 100%;"></audio></p>
+                            <p><audio src="m2.mp3" controls  style="width: 100%;"></audio></p> <br>
+                            <div class="well well-lg text-center bg-light" style="box-shadow: 0px 0px 1px; margin-bottom: 40px; border-radius: 1rem;">
+                            <span style="margin: 20px; margin-bottom: 4px;"></span>
+                            "Congratulations to everyone for a great service!
+                            Happy Lord's Day once again."</span> <br>
+                            <button type="button" class="btn btn-primary btn-sm " id="clicks" style="margin-bottom: 15px;">likes <i class="fa fa-thumbs-up" aria-hidden="true"></i> </button>
+                            <script>
+                            var button = document.getElementById("clicks"),
+                            count=6;
+                            button.onclick=function(){
+                            button.innerHTML="Liked <i class=\"fa fa-thumbs-up\" aria-hidden=\"true\"></i>"
+                                    }
+                            </script>
+                                    </div>
+                            </div>
+                        </div></p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+           
+                        </div>
+                    </div>
+                </div>
             </div>
-        </li>
-        <li class="media my-4">
+
+            <script>
+            var button = document.getElementById("clicks"),
+            count=6;
+            button.onclick=function(){
+            button.innerHTML="Liked <i class=\"fa fa-thumbs-up\" aria-hidden=\"true\"></i>"
+                    }
+            </script>
+             <div id="my-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <p>COMING SOON!!!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    </div>
+            </div>
+    </div>
+    
+<script>
+ function error(){
+                        alert("COMING SOON !!!");
+                    }
+
+</script>
+
+
+
+
+</div></div>
+<div class="container-fluid padding">
+    <h6>―other Ebooks</h6>
+    <div class="row">
+        
+        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+        <li class="media my-4 padding">
             <img src="woman.png" class="mr-3" alt="..."  width="15%">
             <div class="media-body">
                 <h5 class="mt-0 mb-1">Ebook by our Mama</h5>
-                Download
+                <button class="btn btn-primary btn-md" data-toggle="modal" data-target="#my-modal" >Download</button> <button type="reset" class="btn btn-primary btn-md" onclick="error()" >read</button>
             </div>
         </li>
-         <li class="media">
-            <img src="..." class="mr-3" alt="...">
+         <li class="media padding bg-light">
+            <img src="boy.png" class="mr-3" alt="..."  width="15%">
             <div class="media-body">
-                <h5 class="mt-0 mb-1">Third Media heading</h5>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <h5 class="mt-0 mb-1">Ebook by Bro Mike</h5>
+                The youth Vice President has written something You need to read this and discover <br>
+                <p><button  class="btn btn-primary btn-md" data-toggle="modal" data-target="#my-modal">Download</button> <button type="reset" class="btn btn-primary btn-md" onclick="error()" >read</button></p>
             </div>
         </li>
+        <ul class="list-unstyled">
+            <li class="media">
+                <img src="sm.png" class="mr-3" alt="..." width="15%">
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1">Above Only Devotional</h5>
+                    Download the the Above Only Devotional on your mobilephone <br>
+                   <p><button  class="btn btn-primary btn-md" data-toggle="modal" data-target="#my-modal" >Download</button> <button type="reset" class="btn btn-primary btn-md" onclick="error()" >read</button></p>
+                </div>
+            </li>
     </ul>
+    </div>
+    </div>
 </div>
       
     <!-- footer -->
