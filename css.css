@@ -26,12 +26,13 @@ font-family: Arial, sans-serif;
     font-weight: 500;
 }
 .jumbotron{
+    margin: 0px;
     padding: 1rem;
     border-radius: 0;
 }
 .padding{
+    margin-top: 2rem;
     padding-bottom: 2rem;
-    padding-top: 2rem;
 }
 .welcome{
     width: 75%;
@@ -156,13 +157,17 @@ color:red
     }.bghead{
         font-size: 40px;
     }
-    .display-4{
-      font-size: 60%;
-    }.lead{
+   .lead{
       font-size: 100%;
       justify-content: center;
+    }h5{
+font-size: medium;
+    }h3{
+        font-size: large;
     }
-
+    p{
+        font-size: medium;
+    }
 }
 @keyframes animatedBackground {
     10% , 30%{
