@@ -2521,12 +2521,12 @@ html.no-csstransitions .hero-content {
 .s-about {
   padding-top: 19.6rem;
   padding-bottom: 19.6rem;
-  background-color: #a39b9b;
+  background-color: #f3f0f0;
   color: rgba(0, 0, 0, 0.8);
 }
 
 .s-about .subhead {
-  color: #0e0d0d;
+  color: #c21515;
   margin-bottom: 3rem;
 }
 
@@ -2570,7 +2570,7 @@ html.no-csstransitions .hero-content {
   margin-top: 0;
   text-transform: uppercase;
   letter-spacing: .4rem;
-  color: #ffffff;
+  color: #c20d0d;
 }
 
 .about-sched li {
